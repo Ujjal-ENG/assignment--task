@@ -16,9 +16,9 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import banner3 from '../assets/banner/banner003.png';
-import banner4 from '../assets/banner/banner004.png';
-import banner5 from '../assets/banner/banner005.png';
+import banner3 from '../../assets/banner/banner003.png';
+import banner4 from '../../assets/banner/banner004.png';
+import banner5 from '../../assets/banner/banner005.png';
 import './banner.css';
 
 const Header = () => {

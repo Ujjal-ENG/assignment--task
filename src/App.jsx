@@ -1,5 +1,8 @@
+/* eslint-disable comma-dangle */
 import Aos from 'aos';
+import 'aos/dist/aos.css';
 import React, { useEffect, useLayoutEffect, useState } from 'react';
+import Footer from './components/layouts/shared/Footer';
 import LoadingSpinner from './components/layouts/shared/LoadingSpinner';
 import Navbar from './components/layouts/shared/Navbar';
 import Home from './components/pages/Home/Home';
@@ -39,9 +42,10 @@ const App = () => {
         );
     }
     return (
-        <div>
+        <div className="scroll-smooth">
             <Navbar />
             <Home />
+            <Footer />
         </div>
     );
 };

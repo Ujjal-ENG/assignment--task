@@ -10,12 +10,25 @@
 /* eslint-disable func-names */
 /* eslint-disable react/no-this-in-sfc */
 /* eslint-disable react/jsx-closing-bracket-location */
-import React, { useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { AiFillMail } from 'react-icons/ai';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FaFacebookF, FaLocationDot, FaPhoneVolume, FaYoutube } from 'react-icons/fa6';
 
 const bar = () => {
+    useLayoutEffect(() => {
+        let theEnd = 0;
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageXOffset || this.document.documentElement.scrollTop;
+            if (scrollTop > theEnd) {
+                navbar.style.top = '-100px';
+            } else {
+                navbar.style.top = '0px';
+            }
+            theEnd = scrollTop;
+        });
+    }, []);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <>
@@ -72,23 +85,24 @@ const bar = () => {
                             </a>
                         </li>
                         <li>
+                            <a href="#roomcategory" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Room Category
+                            </a>
+                        </li>
+                        <li>
                             <a href="#gallery" className={({ isActive }) => (isActive ? 'active' : 'default')}>
                                 Gallery
                             </a>
                         </li>
-                        <li>
-                            <a href="#packages" className={({ isActive }) => (isActive ? 'active' : 'default')}>
-                                Packages
-                            </a>
-                        </li>
+
                         <li>
                             <a href="#restaurant" className={({ isActive }) => (isActive ? 'active' : 'default')}>
                                 Restaurant
                             </a>
                         </li>
                         <li>
-                            <a href="#event" className={({ isActive }) => (isActive ? 'active' : 'default')}>
-                                Event
+                            <a href="#about-us" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                About Us
                             </a>
                         </li>
                         <li>
