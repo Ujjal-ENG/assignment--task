@@ -6,6 +6,7 @@ import Footer from './components/layouts/shared/Footer';
 import LoadingSpinner from './components/layouts/shared/LoadingSpinner';
 import Navbar from './components/layouts/shared/Navbar';
 import Home from './components/pages/Home/Home';
+import background from './components/pages/assets/background.png';
 
 const App = () => {
     useEffect(() => {
@@ -42,7 +43,7 @@ const App = () => {
         );
     }
     return (
-        <div className="scroll-smooth">
+        <div className="scroll-smooth" className="bg-cover bg-center" style={{ backgroundImage: `url(${background})` }}>
             <Navbar />
             <Home />
             <Footer />
