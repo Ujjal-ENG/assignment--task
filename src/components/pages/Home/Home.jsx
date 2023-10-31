@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div id="room">
+            <div id="room" className="mt-10">
                 <OurRooms />
             </div>
             <div id="gallery">

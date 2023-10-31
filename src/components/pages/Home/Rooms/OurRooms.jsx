@@ -11,7 +11,7 @@ import roomImg03 from '../../assets/room03.png';
 import roomImg04 from '../../assets/room04.png';
 import roomImg05 from '../../assets/room05.png';
 import roomImg06 from '../../assets/room06.png';
-import RoomCategory from '../Room/RoomCategory';
+import Room from '../Room/Room';
 
 const OurRooms = () => {
     return (
@@ -76,7 +76,7 @@ const OurRooms = () => {
                 </section>
             </div>
             <div id="roomcategory">
-                <RoomCategory />
+                <Room />
             </div>
         </>
     );
