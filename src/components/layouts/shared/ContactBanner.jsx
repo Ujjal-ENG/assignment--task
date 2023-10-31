@@ -6,7 +6,7 @@ import contactBanner from '../../pages/assets/banner/banner003.png';
 
 const ContactBanner = () => {
     return (
-        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="bg-[#EFE1C6] grid grid-cols-5 gap-32 justify-center items-center ">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="bg-[#EFE1C6] grid grid-cols-1 md:grid-cols-5 gap-32 justify-center items-center ">
             <div className="col-span-2">
                 <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="w-full" src={contactBanner} alt="contactBanner" />
             </div>
