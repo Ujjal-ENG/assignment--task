@@ -32,7 +32,7 @@ const bar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <>
-            <div className="bg-[#805500] py-2 px-40 text-white flex justify-between">
+            <div className="bg-[#805500] py-2 px-40 text-white md:flex justify-between hidden">
                 <div className="flex gap-16">
                     <p className="flex justify-between items-center gap-2">
                         <span className="border p-1 rounded-full bg-white text-[#805500]">

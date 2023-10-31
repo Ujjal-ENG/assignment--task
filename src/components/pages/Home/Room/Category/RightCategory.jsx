@@ -22,7 +22,7 @@ Adult
 
                             <div className="flex mt-4 items-center">
                                 {item.icons.map((icon, index) => (
-                                    <div className="flex flex-col items-center mb-4 mr-6" key={index}>
+                                    <div className="md:flex hidden flex-col items-center mb-4 mr-6" key={index}>
                                         <img src={icon} alt={`Icon ${index + 1}`} className="w-[28px] h-[28px]" />
                                         <p className="text-center">{item.levels[index]}</p>
                                     </div>

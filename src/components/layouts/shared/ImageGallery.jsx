@@ -9,7 +9,7 @@ const ImageGallery = ({ img1, img2, img3, img4, img5, img6 }) => {
             <section className="text-gray-600 body-font">
                 <div className=" px-5 pt-12 pb-10 mx-auto flex flex-wrap">
                     <div>
-                        <div className="grid grid-cols-3 gap-6 mb-2">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-2">
                             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="col-span-1">
                                 <LazyLoadImage alt="gallery" effect="blur" className="object-cover h-96 object-center block rounded-xl" src={img1} width="100%" height="100%" />
                             </div>
