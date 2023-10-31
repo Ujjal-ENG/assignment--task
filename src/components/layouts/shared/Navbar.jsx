@@ -15,7 +15,7 @@ import { AiFillMail } from 'react-icons/ai';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FaFacebookF, FaLocationDot, FaPhoneVolume, FaYoutube } from 'react-icons/fa6';
 
-const bar = () => {
+const Navbar = () => {
     useLayoutEffect(() => {
         let theEnd = 0;
         const navbar = document.getElementById('navbar');
@@ -31,7 +31,7 @@ const bar = () => {
     }, []);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
-        <nav id='navbar'>
+        <nav>
             <div className="bg-[#805500] py-2 px-40 text-white md:flex justify-between hidden">
                 <div className="flex gap-16">
                     <p className="flex justify-between items-center gap-2">
@@ -64,7 +64,7 @@ const bar = () => {
                 </div>
             </div>
 
-            <div className="text-lg bg-[#FFE5B4] pt-2 pb-3  mx-auto  w-full shadow-2xl">
+            <div className="text-lg bg-[#FFE5B4] pt-2 pb-3  mx-auto  w-full shadow-2xl  fixed z-10" id="navbar">
                 <div className="relative  flex items-center justify-between px-4 lg:px-24 mx-auto">
                     <div className="flex items-center gap-4 ">
                         {/*Website logo */}
@@ -210,4 +210,4 @@ const bar = () => {
     );
 };
 
-export default bar;
+export default Navbar;

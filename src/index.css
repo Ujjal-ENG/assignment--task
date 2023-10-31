@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 /* Tailwind CSS custom Style and Using this style whatever i want */
-
+html {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.5s ease;
+}
 .my-container {
     @apply px-4 py-16 mx-auto sm:max-w-xl md:max-w-7xl  lg:py-10;
 }
