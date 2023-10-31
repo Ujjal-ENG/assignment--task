@@ -16,6 +16,7 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import { showAlert } from '../../../layouts/shared/Swal';
 import banner3 from '../../assets/banner/banner003.png';
 import banner4 from '../../assets/banner/banner004.png';
 import banner5 from '../../assets/banner/banner005.png';
@@ -33,9 +34,6 @@ const Header = () => {
         setCheckOutDate(e.target.value);
     };
 
-    const handleSearch = () => {
-        console.log('Search clicked with check-in date:', checkInDate, 'and check-out date:', checkOutDate);
-    };
     return (
         <div className="">
             <Carousel className="slide text-center" autoPlay={true} showThumbs={false} interval={2000} infiniteLoop={true}>
@@ -79,7 +77,7 @@ const Header = () => {
                         />
                     </div>
                     <div>
-                        <button className="bg-[#CAD3EA] hover:bg-[#CAD3EA] text-black font-semibold py-2 text-lg px-4 ml-2 rounded mt-5" onClick={handleSearch}>
+                        <button onClick={showAlert} className="bg-[#CAD3EA] hover:bg-[#CAD3EA] text-black font-semibold py-2 text-lg px-4 ml-2 rounded mt-5" >
                             Search
                         </button>
                     </div>

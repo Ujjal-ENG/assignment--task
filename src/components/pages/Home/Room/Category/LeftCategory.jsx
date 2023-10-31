@@ -1,4 +1,5 @@
 import React from 'react';
+import { showAlert } from '../../../../layouts/shared/Swal';
 import ImageSlider from '../ImageSlider';
 
 const LeftCategory = ({ item }) => {
@@ -50,7 +51,7 @@ Adult
                                 </div>
                                 <div>
                                     <a className="m-2" href="#booking-form">
-                                        <button type="button" className="bg-[#F6BA44] hover:bg-amber-300 text-white font-semibold px-4 py-2 rounded-2xl ml-auto">BOOK</button>
+                                        <button onClick={showAlert} type="button" className="bg-[#F6BA44] hover:bg-amber-300 text-white font-semibold px-4 py-2 rounded-2xl ml-auto">BOOK</button>
                                     </a>
                                 </div>
                             </div>

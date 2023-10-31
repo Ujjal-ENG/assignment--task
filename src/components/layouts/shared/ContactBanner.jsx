@@ -19,18 +19,22 @@ const ContactBanner = () => {
                         <span className=" text-[white] flex justify-center items-center mb-2">
                             <FaPhoneVolume />
                         </span>
-                        <a className="mb-1" href="tel:+917439959439">
+                        <a className="mb-1" href="tel:+4387954983543">
                             +880 1798421460
-                        </a>{' '}
+                        </a>
                         <br />
-                        <a href="tel:+91 8100286250">+880 1798421460</a> <br />
-                        <a href="tel:+91 7439944308">+880 1798421460</a>
+                        <a href="tel:+91 8100286250"> +880 1798421460</a>
+{' '}
+<br />
+                        <a href="tel:+91 7439944308"> +880 1798421460</a>
                     </div>
                     <div>
                         <span className="text-[white] flex justify-center items-center mb-2">
                             <AiFillMail />
                         </span>
-                        <a href="mailto:info@gharanaresort.com">Email - ujjalroy7862@gmail.com</a> <br />
+                        <a href="mailto:info@gharanaresort.com">Email - info@ujjalroy.com</a>
+{' '}
+<br />
                         <a href="mailto:gm@gharanaresort.com">Email - ujjalroy7862@gmail.com</a>
                     </div>
                 </div>

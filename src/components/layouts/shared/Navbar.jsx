@@ -31,7 +31,7 @@ const bar = () => {
     }, []);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
-        <>
+        <nav id='navbar'>
             <div className="bg-[#805500] py-2 px-40 text-white md:flex justify-between hidden">
                 <div className="flex gap-16">
                     <p className="flex justify-between items-center gap-2">
@@ -101,6 +101,11 @@ const bar = () => {
                             </a>
                         </li>
                         <li>
+                            <a href="#testmonials" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Testimonial
+                            </a>
+                        </li>
+                        <li>
                             <a href="#about-us" className={({ isActive }) => (isActive ? 'active' : 'default')}>
                                 About Us
                             </a>
@@ -150,70 +155,58 @@ const bar = () => {
                                     </div>
                                     {/* Mobile  Items Section */}
                                     <ul className="space-y-2">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                className="block
-                             px-4 font-semibold  text-black hover:text-[#1c3b47]">
-                                                Home
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#room"
-                                                className="block
-                             px-4 font-semibold  text-black hover:text-[#1c3b47]">
-                                                Room
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#gallery"
-                                                className="block
-                             px-4 font-semibold  text-black hover:text-[#1c3b47]">
-                                                Gallery
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#packages"
-                                                className="block
-                             px-4 font-semibold  text-black hover:text-[#1c3b47]">
-                                                Packages
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#restaurant"
-                                                className="block
-                             px-4 font-semibold  text-black hover:text-[#1c3b47]">
-                                                Restaurant
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#event"
-                                                className="block
-                             px-4 font-semibold  text-black hover:text-[#1c3b47]">
-                                                Event
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#contact"
-                                                className="block
-                             px-4 font-semibold  text-black hover:text-[#1c3b47]">
-                                                Contact
-                                            </a>
-                                        </li>
+
+                        <li>
+                            <a href="#" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#room" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Room
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#roomcategory" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Room Category
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#gallery" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#restaurant" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Restaurant
+                            </a>
+                        </li>
+<li>
+                        <a href="#testmonials" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Testimonial
+                        </a>
+</li>
+
+                        <li>
+                            <a href="#about-us" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" className={({ isActive }) => (isActive ? 'active' : 'default')}>
+                                Contact
+                            </a>
+                        </li>
                                     </ul>
+
                                 </div>
                             </div>
                         )}
                     </div>
                 </div>
             </div>
-        </>
+        </nav>
     );
 };
 

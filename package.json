@@ -18,12 +18,14 @@
         "react-fast-marquee": "^1.6.2",
         "react-icons": "^4.11.0",
         "react-lazy-load-image-component": "^1.6.0",
+        "react-player": "^2.13.0",
         "react-responsive-carousel": "^3.2.23",
         "react-router-dom": "^6.10.0",
         "react-slick": "^0.29.0",
         "slick-carousel": "^1.8.1",
         "sort-by": "^1.2.0",
-        "sweetalert2": "^11.9.0"
+        "sweetalert2": "^11.9.0",
+        "swiper": "9.4.1"
     },
     "devDependencies": {
         "@types/react": "^18.0.28",
@@ -31,6 +33,7 @@
         "@vitejs/plugin-react": "^3.1.0",
         "autoprefixer": "^10.4.14",
         "babel-eslint": "^10.1.0",
+        "daisyui": "^3.9.4",
         "eslint": "8.2.0",
         "eslint-config-airbnb": "19.0.4",
         "eslint-config-prettier": "^9.0.0",
